@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canopy — Discover Free Local Events</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #1a1a1a;
+            background: #fafaf8;
+            line-height: 1.6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 24px 60px;
+            background: linear-gradient(160deg, #e8f5e9 0%, #f1f8e9 50%, #fff8e1 100%);
+        }
+
+        .hero-icon {
+            font-size: 72px;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+            color: #2e7d32;
+        }
+
+        .hero .tagline {
+            font-size: 20px;
+            color: #555;
+            max-width: 520px;
+            margin: 0 auto 32px;
+        }
+
+        .app-store-badge {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 14px 32px;
+            background: #000;
+            color: #fff;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .app-store-badge:hover {
+            background: #333;
+        }
+
+        .features {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #2e7d32;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 32px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 24px 16px;
+        }
+
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .feature h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .event-types {
+            background: #fff;
+            padding: 60px 24px;
+        }
+
+        .event-types-inner {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .event-types h2 {
+            font-size: 28px;
+            margin-bottom: 24px;
+            color: #2e7d32;
+        }
+
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .badge {
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .badge-boot { background: #e3f2fd; color: #1565c0; }
+        .badge-craft { background: #f3e5f5; color: #7b1fa2; }
+        .badge-vintage { background: #fff3e0; color: #e65100; }
+        .badge-farmers { background: #e8f5e9; color: #2e7d32; }
+        .badge-flea { background: #efebe9; color: #4e342e; }
+        .badge-food { background: #ffebee; color: #c62828; }
+
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: #999;
+            font-size: 13px;
+            border-top: 1px solid #eee;
+        }
+
+        footer a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            margin: 0 12px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 36px; }
+            .hero .tagline { font-size: 17px; }
+            .feature-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-icon">🌿</div>
+        <h1>Canopy</h1>
+        <p class="tagline">Find car boot sales, craft fairs, farmers markets and more — all the free and affordable events happening near you.</p>
+        <a href="#" class="app-store-badge">Download on the App Store</a>
+    </section>
+
+    <section class="features">
+        <h2>What you get</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <div class="feature-icon">📍</div>
+                <h3>Nearby events</h3>
+                <p>Events sorted by distance from your location, so you always know what's close.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h3>Widgets</h3>
+                <p>Glanceable home screen widgets showing today's events without opening the app.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔔</div>
+                <h3>Notifications</h3>
+                <p>Daily alerts and weekend roundups so you never miss a great local event.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏷️</div>
+                <h3>Filter by type</h3>
+                <p>Toggle event types on and off to see only what interests you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-types">
+        <div class="event-types-inner">
+            <h2>Events we cover</h2>
+            <div class="badges">
+                <span class="badge badge-boot">🚗 Car Boot Sales</span>
+                <span class="badge badge-craft">🎨 Craft Fairs</span>
+                <span class="badge badge-vintage">🕰️ Vintage Fairs</span>
+                <span class="badge badge-farmers">🌿 Farmers Markets</span>
+                <span class="badge badge-flea">👜 Flea Markets</span>
+                <span class="badge badge-food">🍔 Food Festivals</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:support@incept5.com">Contact Support</a>
+        </div>
+        <p>&copy; 2026 Incept5. All rights reserved.</p>
+    </footer>
+</body>
+</html>
